@@ -1,0 +1,65 @@
+body {
+      margin: 0;
+      font-family: Calibri, sans-serif;
+    }
+
+    header {
+      background: #6c7a89;
+      color: white;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+    }
+
+    .logo {
+      float: left;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      padding: 5px 10px;
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    .container {
+      background: #faebd7;
+      height: 100px;
+      clear: both;
+    }
+
+    .kolom {
+      float: left;
+      width: 25%;
+      height: 75%;
+    }
+
+    .kol1 { background: yellow; }
+    .kol2 { background: goldenrod; }
+    .kol3 { background: steelblue; }
+    .kol4 { background: seagreen; }
+
+    .kolom-XL {
+      background: lightblue;
+      height: 250px;
+      clear: both;
+    }
+
+    footer {
+      background: #6c7a89;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      font-size: 14px;
+      clear: both;
+    }
