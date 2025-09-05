@@ -10,7 +10,7 @@ nav {
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(6px);
   border-bottom: 2px solid #d0e4f5;
-  padding: 8px 40px; /* lebih seimbang */
+  padding: 8px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,10 +18,11 @@ nav {
 
 /* Branding / Logo */
 nav .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: #182838;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 /* Menu */
@@ -30,21 +31,20 @@ nav .menu {
   gap: 20px;
 }
 nav .menu a {
-  text-decoration: none;
   color: #333;
-  font-weight: 500;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: 0.2s;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
 }
 nav .menu a:hover {
-  background: rgba(255,255,255,0.6);
-  color: #182838;
+  color: rgb(169, 216, 255);
 }
 
 /* Container*/
 .container {
-  background: rgba(255, 249, 196, 0.85); 
+  background: rgba(255, 253, 231, 0.85); 
   padding: 24px 28px;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -148,6 +148,87 @@ nav .menu a:hover {
   clear: both;
   opacity: 0.85;
   gap:24px;
+}
+
+/* Halaman CV */
+.cv {
+  display: grid;
+  grid-template-columns: 28% 72%;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  overflow: hidden;
+  background: rgba(255,255,255,0.9);
+}
+.sidebar {
+  background: rgba(108,122,137,0.6);
+  color: #fff;
+  padding: 28px 20px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  object-position: 0% 0%;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+.sidebar h3 {
+  font-size: 15px;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+.sidebar p, .sidebar ul {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 14px;
+}
+.main {
+  padding: 35px;
+  background: #faf3e0;
+}
+.main h1 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  color: #2c2f33;
+  border-bottom: 2px solid #d0e6f0;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.main h2 {
+  font-size: 18px;
+  margin: 24px 0 10px;
+  border-bottom: 2px solid #d0e6f0;
+  padding-bottom: 4px;
+  color: #182838;
+}
+.main p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.main ul {
+  margin: 6px 0 14px 18px;
+  font-size: 13px;
+}
+.skills td {
+  padding: 4px 6px;
+  font-size: 13px;
+}
+.skills td:nth-child(2) {
+  text-align: right;
 }
 
 /* Footer */
