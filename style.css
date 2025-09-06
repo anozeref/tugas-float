@@ -16,7 +16,7 @@ nav {
   align-items: center;
 }
 
-/* Branding / Logo */
+/* Navbar / Logo */
 nav .logo {
   font-size: 22px;
   font-weight: 600;
@@ -25,7 +25,7 @@ nav .logo {
   letter-spacing: 1px;
 }
 
-/* Menu */
+/* Navbar / Menu */
 nav .menu {
   display: flex;
   gap: 20px;
@@ -48,15 +48,14 @@ nav .menu a.active {
   background: rgba(169, 216, 255, 0.7);
   color: #182838;
   font-weight: 600;
-  border-radius: 75%;   /* jadi lingkaran */
-  padding: 8px;         /* biar proporsional */
-  display: inline-flex; /* biar ikon center */
+  border-radius: 75%;
+  padding: 8px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
 }
 
-/* Container*/
+/* Container (Intro Awal) */
 .container {
   background: rgba(255, 253, 231, 0.85); 
   padding: 24px 28px;
@@ -103,13 +102,6 @@ nav .menu a.active {
 .container-photo {
   text-align: center;
   min-width: 160px;
-}
-.container-photo img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 /* Gallery*/
@@ -161,7 +153,6 @@ nav .menu a.active {
   text-align: justify;
   clear: both;
   opacity: 0.85;
-  gap:24px;
 }
 
 /* Halaman CV */
@@ -175,6 +166,8 @@ nav .menu a.active {
   overflow: hidden;
   background: rgba(255,255,255,0.9);
 }
+
+/* Profil CV */
 .sidebar {
   background: rgba(108,122,137,0.6);
   color: #fff;
@@ -209,6 +202,8 @@ nav .menu a.active {
   list-style: none;
   padding-left: 14px;
 }
+
+/* Content CV */
 .main {
   padding: 35px;
   background: #faf3e0;
