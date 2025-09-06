@@ -38,7 +38,7 @@ nav .menu a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, background 0.3s ease;
   
 }
 nav .menu a:hover {
@@ -51,8 +51,6 @@ nav .menu a.active {
   border-radius: 75%;
   padding: 8px;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Container (Intro Awal) */
@@ -181,7 +179,7 @@ nav .menu a.active {
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
-  object-position: 0% 0%;
+  object-position: center top;
   margin-bottom: 16px;
   box-shadow: 0 3px 10px rgba(0,0,0,.2);
 }
