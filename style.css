@@ -2,18 +2,17 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: url("media/background.jpg") no-repeat center center/cover;
-  color: #333;
+  background-attachment: fixed;
+  color: #2c2f33;
 }
 
 /* Navbar */
 nav {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(108, 122, 137, 0.568);
   backdrop-filter: blur(6px);
-  border-bottom: 2px solid #d0e4f5;
+  border-bottom: 2px solid #4a90e2;
   padding: 8px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
 }
 
 /* Navbar / Logo */
@@ -23,34 +22,33 @@ nav .logo {
   color: #182838;
   text-decoration: none;
   letter-spacing: 1px;
+  float: left;
 }
 
 /* Navbar / Menu */
 nav .menu {
-  display: flex;
-  gap: 20px;
-  
-  
+  float: right;
 }
+
 nav .menu a {
-  color: #333;
+  text-decoration: none;
+  color: #2c2f33;
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  margin-left: 20px;
   transition: color 0.3s ease, background 0.3s ease;
-  
 }
+
 nav .menu a:hover {
-  color: rgb(169, 216, 255);
+  color: #4a90e2;
 }
+
 nav .menu a.active {
-  background: rgba(169, 216, 255, 0.7);
-  color: #182838;
+  background: #4a90e2;
+  color: #ffffff;
   font-weight: 600;
-  border-radius: 75%;
+  border-radius: 50%;
   padding: 8px;
-  display: inline-flex;
 }
 
 /* Container (Intro Awal) */
@@ -67,6 +65,36 @@ nav .menu a.active {
   gap: 24px;
 }
 
+.container-text {
+  flex: 1;
+  padding-right: 32px;
+}
+.container-text h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #182838;
+  border-bottom: #182838 2px solid;
+}
+.container-text em {
+  display: block;
+  margin-top: 0px;
+  font-style: italic;
+  color: #555;
+}
+.container-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 0px;
+  text-align: justify;
+}
+
+.container-photo {
+  float: right;
+  width: 20%;
+  text-align: center;
+}
+
 .container-photo img {
   width: 120px;
   height: 120px;
@@ -74,32 +102,13 @@ nav .menu a.active {
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
-.container-text {
-  flex: 1;
-  padding-right: 32px;
-}
-.container-text h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
-  color: #182838;
-}
-.container-text em {
-  display: block;
-  margin-top: 6px;
-  font-style: italic;
-  color: #555;
-}
-.container-text p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-top: 12px;
-  text-align: justify;
-}
 
-.container-photo {
-  text-align: center;
-  min-width: 160px;
+/* Gallery Wrapper */
+.gallery-wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0 1%;
 }
 
 /* Gallery*/
@@ -119,10 +128,10 @@ nav .menu a.active {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.kol1 { background: rgb(253, 253, 187); }
-.kol2 { background: rgb(255, 231, 172); }
-.kol3 { background: rgb(169, 216, 255); }
-.kol4 { background: rgb(176, 255, 210); }
+.kol1 { background: #fdfdb0; }
+.kol2 { background: #ffd4a3; }
+.kol3 { background: #7ab8f5; }
+.kol4 { background: #7fffd4; }
 
 .kolom:hover {
   transform: translateY(-5px);
@@ -138,19 +147,17 @@ nav .menu a.active {
 
 /* Kolom GEDE */
 .kolom-XL {
-  background-color: #d0e6f0;
+  background-color: rgba(208, 230, 240, 0.95);
   padding: 20px 25px;
   border-radius: 10px;
-  font-family: 'Calibri', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: #2c2f33;
   max-width: 900px;
   margin: 30px auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: justify;
   clear: both;
-  opacity: 0.85;
 }
 
 /* Halaman CV */
@@ -167,15 +174,17 @@ nav .menu a.active {
 
 /* Profil CV */
 .sidebar {
-  background: rgba(108,122,137,0.6);
-  color: #fff;
+  background: rgba(80,90,100,0.7);
+  color: #fafafa;
   padding: 28px 20px;
   text-align: center;
   backdrop-filter: blur(4px);
 }
 .sidebar img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  max-width: 120px;
+  height:auto;
+  max-height: 120px;
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
@@ -205,6 +214,7 @@ nav .menu a.active {
 .main {
   padding: 35px;
   background: #faf3e0;
+  
 }
 .main h1 {
   margin: 0 0 12px;
@@ -225,15 +235,23 @@ nav .menu a.active {
   margin: 6px 0;
   font-size: 14px;
   line-height: 1.6;
+  color: #2c2f33;
 }
 .main ul {
   margin: 6px 0 14px 18px;
   font-size: 13px;
+  color: #2c2f33;
 }
+.skills {
+  width: 100%;
+}
+
 .skills td {
   padding: 4px 6px;
   font-size: 13px;
+  color: #2c2f33;
 }
+
 .skills td:nth-child(2) {
   text-align: right;
 }
