@@ -1,3 +1,6 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+img, video { display: block; max-width: 100%; height: auto; }
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -79,13 +82,14 @@ nav .menu a.active {
 .container-text em {
   display: block;
   margin-top: 0px;
+  margin-bottom: 12px;
   font-style: italic;
   color: #555;
 }
 .container-text p {
   font-size: 16px;
   line-height: 1.7;
-  margin-top: 0px;
+  margin-top: 5px;
   text-align: justify;
 }
 
@@ -110,13 +114,18 @@ nav .menu a.active {
   overflow: hidden;
   padding: 0 1%;
 }
+.gallery-wrapper::after {
+content: "";
+display: block;
+clear: both;
+}
 
 /* Gallery*/
 .kolom {
-  width: 23%;
+  width: 24%;
   height: 220px;
   float: left;
-  margin: 1%;
+  margin: 0.5%;
   background: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
@@ -189,6 +198,8 @@ nav .menu a.active {
   border: 3px solid #fff;
   object-fit: cover;
   object-position: center top;
+  display: block;
+  margin: 0 auto 16px auto;
   margin-bottom: 16px;
   box-shadow: 0 3px 10px rgba(0,0,0,.2);
 }
@@ -250,6 +261,11 @@ nav .menu a.active {
   padding: 4px 6px;
   font-size: 13px;
   color: #2c2f33;
+}
+
+.skills tr:hover td {
+background: rgba(108, 122, 137, 0.568);
+transition: background 0.3s ease;
 }
 
 .skills td:nth-child(2) {
