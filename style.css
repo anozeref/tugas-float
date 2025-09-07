@@ -188,6 +188,8 @@ nav .menu a.active {
   overflow: hidden;
   padding: 0 1%;
 }
+
+.container::after,
 .gallery-wrapper::after {
 content: "";
 display: block;
@@ -280,19 +282,24 @@ clear: both;
 .sidebar h3 {
   font-size: 15px;
   margin: 20px 0 10px;
-  border-bottom: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid rgba(255,255,255,.6);
   padding-bottom: 4px;
   text-transform: uppercase;
 }
-.sidebar p, .sidebar ul {
+.sidebar p, 
+.sidebar ul {
   text-align: left;
   font-size: 13px;
   line-height: 1.6;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 .sidebar ul {
   list-style: none;
-  padding-left: 14px;
+  padding-left: 16px;
+}
+
+.sidebar ul li {
+  margin-bottom: 6px;
 }
 
 /* Content CV */
@@ -344,6 +351,23 @@ transition: background 0.3s ease;
 
 .skills td:nth-child(2) {
   text-align: right;
+}
+
+/* Section spacing */
+.container, 
+.gallery-wrapper,
+.kolom-XL,
+.cv {
+  margin-bottom: 40px;
+}
+
+/* Shadow Seragam */
+.container,
+.kolom,
+.kolom-XL,
+.cv,
+.sidebar img {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Footer */
