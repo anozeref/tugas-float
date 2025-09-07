@@ -12,11 +12,50 @@ img, video {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  font-size:14px;
+  line-height: 1.6;
   background: url("media/background.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   color: #2c2f33;
   padding-top:30px;
   padding-bottom:15px;
+}
+
+/*Typografi */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #182838;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #182838;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #2c2f33;
+}
+
+/* Paragraf */
+p {
+  font-size: 14px;
+  margin: 6px 0 12px;
+}
+
+/* Nama Utama*/
+.container-text h1,
+.main h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #182838;
+  text-align: left;
+  border-bottom: 2px solid #d0e6f0;
+  padding-bottom: 6px;
 }
 
 /* Navbar */
